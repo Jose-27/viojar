@@ -1,0 +1,58 @@
+// import the CSS framework
+@import "bootstrap";
+html,body{
+  bottom:0;
+  height: 100%;
+  width: 100%;
+  background-image: -webkit-gradient(
+  linear,
+  left bottom,
+  right bottom,
+  color-stop(0, #000000),
+  color-stop(0.5, #0A1029),
+  color-stop(1, #000000)
+);
+background-image: -o-linear-gradient(right, #000000 0%, #0A1029 50%, #000000 100%);
+background-image: -moz-linear-gradient(right, #000000 0%, #0A1029 50%, #000000 100%);
+background-image: -webkit-linear-gradient(right, #000000 0%, #0A1029 50%, #000000 100%);
+background-image: -ms-linear-gradient(right, #000000 0%, #0A1029 50%, #000000 100%);
+background-image: linear-gradient(to right, #000000 0%, #0A1029 50%, #000000 100%);
+}
+// make all images responsive by default
+img {
+  @extend .img-responsive;
+  margin: 0 auto;
+  }
+// override for the 'Home' navigation link
+.navbar-brand {
+  font-size: inherit;
+  }
+
+// THESE ARE EXAMPLES YOU CAN MODIFY
+// create your own classes
+// to make views framework-neutral
+.column {
+  @extend .col-md-6;
+  @extend .text-center;
+  }
+.form {
+  @extend .col-md-6;
+  }
+.form-centered {
+  @extend .col-md-6;
+  @extend .text-center;
+  }
+.submit {
+  @extend .btn;
+  @extend .btn-primary;
+  @extend .btn-lg;
+  }
+// apply styles to HTML elements
+// to make views framework-neutral
+
+ 
+  
+section {
+  @extend .row;
+  margin-top: 20px;
+  }

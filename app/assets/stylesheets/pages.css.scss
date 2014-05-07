@@ -1,0 +1,172 @@
+
+.logo {
+  font: 400 80px/0.8 'Great Vibes', Helvetica, sans-serif!important;
+  color: #fff;
+  text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
+  margin:20px 55px 0; 
+  position:absolute;
+}
+
+.lead{
+	top:40%;
+	padding:20px;
+	position:absolute;
+}
+.playpausebtn .front {
+    top: 0;
+    z-index: 900;
+    width:400px;
+    height: 400px;
+    -webkit-border-radius:400px;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 114, 255, 1);
+    -moz-box-shadow:    0px 0px 30px 0px rgba(0, 114, 255, 1);
+    box-shadow:         0px 0px 30px 0px rgba(0, 114, 255, 1);
+}
+.playpausebtn .back {
+    top: 0;
+    z-index: 800;
+    width:400px;
+    height: 400px;
+    -webkit-border-radius:400px;
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(0, 114, 255, 1);
+	-moz-box-shadow:    0px 0px 30px 0px rgba(0, 114, 255, 1);
+	box-shadow:         0px 0px 30px 0px rgba(0, 114, 255, 1);
+}
+.pulsar{
+	 border: 2px solid rgb(0,114,255);
+    -webkit-border-radius: 200px;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    -webkit-animation: pulsate 2.5s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+    opacity: 0.0;
+ }
+@-webkit-keyframes pulsate {
+	 0% {-webkit-transform: scale(1.0, 1.0); opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {-webkit-transform: scale(1.1, 1.1); opacity: 0.0;}
+}
+.circle1{
+     
+    top: 0;
+    z-index: 900;
+    width:40px;
+    height: 40px;
+    -webkit-border-radius:50px;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 114, 255, 1);
+    -moz-box-shadow:    0px 0px 30px 0px rgba(0, 114, 255, 1);
+    box-shadow:         0px 0px 30px 0px rgba(0, 114, 255, 1);
+}
+
+.triangle-right {
+	top:24%;
+	left:32%;
+	width: 0;
+	height: 0;
+	position:absolute;
+	border-top: 50px solid transparent;
+	border-left: 100px solid #FFFFFF ;
+	border-bottom: 50px solid transparent;
+
+}
+
+.playpausebtn {
+	margin:200px auto;
+    width: 200px;
+    height: 200px;  
+    cursor: pointer;
+    font-size: .8em;
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+}
+.playpausebtn .front {
+    position: absolute;
+    top: 0;
+    z-index: 900;
+    width: 200px;
+    height: 200px;
+    border-radius:200px;
+    text-align: center;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+    /* -- transition is the magic sauce for animation -- */
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.playpausebtn.flip .front {
+    z-index: 900;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+}
+.playpausebtn .back {
+    position: absolute;
+    top: 0;
+    z-index: 800;
+    width: 200px;
+    height: 200px;
+     border-radius:200px;
+    -webkit-transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+ 
+    -moz-transform: rotateY(-180deg);
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+    /* -- transition is the magic sauce for animation -- */
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.playpausebtn.flip .back {
+    z-index: 1000;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+}
+.word h4{
+	text-align:center;
+	width:200px;
+	height:auto;
+	margin-top:-20px;
+	color:#fff;
+	font: 400 40px/0.8 'Great Vibes', Helvetica, sans-serif!important;
+	text-shadow: 0px 0px 20px rgba(0, 114, 255, 1);
+}
+.media-video{
+    content:'';
+    position:fixed;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width:100%;
+    min-width: 970px;
+    height:100%;
+    top:0;
+    left:0;
+}
+.sub-container{
+	width:100%;
+    padding-left:10px;
+	height:300px;
+    bottom:0;
+    font-family: "Roboto";
+    font-size:40px;
+    color:#dbdbdb;
+    font-weight:400;
+    text-shadow: 4px 4px 30px rgba(0, 255, 255, 1);
+    text-align:center;
+    .col-md-4 div{
+        cursor:pointer;
+    }
+}
