@@ -1,16 +1,69 @@
+a:hover {color:#fff;}
+a:hover {text-decoration:none;}
+// ::selection {background: #ffb7b7; /* Safari */}
+// ::-moz-selection {background: #ffb7b7; /* Firefox */}
 
-.logo {
+.container{
+    width:100%;
+    padding:0;
+    margin:0;
+}
+.logo{
   font: 400 80px/0.8 'Great Vibes', Helvetica, sans-serif!important;
   color: #fff;
   text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
   margin:20px 55px 0; 
   position:absolute;
 }
-
 .lead{
 	top:40%;
 	padding:20px;
 	position:absolute;
+}
+.circle1{
+    top: 0;
+    z-index: 900;
+    width:40px;
+    height: 40px;
+    -webkit-border-radius:50px;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 114, 255, 1);
+    -moz-box-shadow:    0px 0px 30px 0px rgba(0, 114, 255, 1);
+    box-shadow:         0px 0px 30px 0px rgba(0, 114, 255, 1);
+}
+.triangle-right {
+	top:24%;
+	left:32%;
+	width: 0;
+	height: 0;
+	position:absolute;
+	border-top: 50px solid transparent;
+	border-left: 100px solid #FFFFFF ;
+	border-bottom: 50px solid transparent;
+}
+.pulsar{
+     border: 2px solid rgb(0,114,255);
+    -webkit-border-radius: 200px;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    -webkit-animation: pulsate 2.5s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+    opacity: 0.0;
+ }
+@-webkit-keyframes pulsate {
+     0% {-webkit-transform: scale(1.0, 1.0); opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {-webkit-transform: scale(1.1, 1.1); opacity: 0.0;}
+}
+.playpausebtn {
+	margin:200px auto;
+    width: 200px;
+    height: 200px;  
+    cursor: pointer;
+    font-size: .8em;
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
 }
 .playpausebtn .front {
     top: 0;
@@ -29,58 +82,9 @@
     width:400px;
     height: 400px;
     -webkit-border-radius:400px;
-	-webkit-box-shadow: 0px 0px 30px 0px rgba(0, 114, 255, 1);
-	-moz-box-shadow:    0px 0px 30px 0px rgba(0, 114, 255, 1);
-	box-shadow:         0px 0px 30px 0px rgba(0, 114, 255, 1);
-}
-.pulsar{
-	 border: 2px solid rgb(0,114,255);
-    -webkit-border-radius: 200px;
-    height: 200px;
-    width: 200px;
-    margin: 0 auto;
-    -webkit-animation: pulsate 2.5s ease-out;
-    -webkit-animation-iteration-count: infinite; 
-    opacity: 0.0;
- }
-@-webkit-keyframes pulsate {
-	 0% {-webkit-transform: scale(1.0, 1.0); opacity: 0.0;}
-    50% {opacity: 1.0;}
-    100% {-webkit-transform: scale(1.1, 1.1); opacity: 0.0;}
-}
-.circle1{
-     
-    top: 0;
-    z-index: 900;
-    width:40px;
-    height: 40px;
-    -webkit-border-radius:50px;
-    text-align: center;
     -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 114, 255, 1);
     -moz-box-shadow:    0px 0px 30px 0px rgba(0, 114, 255, 1);
     box-shadow:         0px 0px 30px 0px rgba(0, 114, 255, 1);
-}
-
-.triangle-right {
-	top:24%;
-	left:32%;
-	width: 0;
-	height: 0;
-	position:absolute;
-	border-top: 50px solid transparent;
-	border-left: 100px solid #FFFFFF ;
-	border-bottom: 50px solid transparent;
-
-}
-
-.playpausebtn {
-	margin:200px auto;
-    width: 200px;
-    height: 200px;  
-    cursor: pointer;
-    font-size: .8em;
-    -webkit-perspective: 600px;
-    -moz-perspective: 600px;
 }
 .playpausebtn .front {
     position: absolute;
@@ -155,10 +159,10 @@
     top:0;
     left:0;
 }
-.sub-container{
-	width:100%;
+.sub-container{	
+    width:100%;
     padding-left:10px;
-	height:300px;
+	height:auto;
     bottom:0;
     font-family: "Roboto";
     font-size:40px;
@@ -166,7 +170,16 @@
     font-weight:400;
     text-shadow: 4px 4px 30px rgba(0, 255, 255, 1);
     text-align:center;
-    .col-md-4 div{
+    .col-md-4{
         cursor:pointer;
     }
+}
+.content1, .content2, .content3{
+    float:left;
+    background:#fff;
+    width:100%;
+    overflow:none;
+    height:600px;
+    color:black!important;
+    display:none;
 }

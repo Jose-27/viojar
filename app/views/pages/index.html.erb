@@ -1,12 +1,11 @@
-
 <div class="media-video" oncontextmenu="return false;">
 <%= video_tag("webvideo.mp4") %></div>
+<div class="container" >
 <%= link_to"VioJar", root_path, class: "logo" %>
-<div class="container">
 <div class="hover playpausebtn">
-    <div class="front"> 
-    <div class="word">
-   <h4 class="lead">Start</h4>
+<div class="front"> 
+  <div class="word">
+    <h4 class="lead">Start</h4>
     <h4 class="lead">Comienzo</h4>
     <h4 class="lead">प्रारंभ</h4>
     <h4 class="lead">بداية</h4>
@@ -27,51 +26,25 @@
     <h4 class="lead">kezdet</h4>
     <h4 class="lead">byrjun</h4>
     </div>
-    </div>
+   </div>
     <div class="pulsar"></div>
     <div class="back"><div class="triangle-right"></div></div> 
-    </div>
-    <div class="sub-container">
-<div class="container-fluid">
-<div class="row">
-   <div class="col-md-4"><div> Who We Are</div></div>
-   <div class="col-md-4"><div> The Unstoppables</div></div>
-   <div class="col-md-4"><div> Subscribe</div></div>
 </div>
+<div class="sub-container">
+ <div class="container-fluid">
+  <div class="row">
+   <div class="dp1"><div class="col-md-4"> Who We Are</div></div>
+     <div class="dp2"><div class="col-md-4">The Unstoppables</div></div>
+      <div class="dp3"><div class="col-md-4"> Subscribe</div></div>
+     <span class="content1">we want to change people wahct videos </span>
+      <span class="content2">2 </span>
+       <span class="content3">3 </span>
+   </div>
+  </div>
+ </div>
 </div>
-</div>
-</div>
 
 
-<script type="text/javascript">
-        $(document).ready(function(){
-            // set up hover panels
-            // although this can be done without JavaScript, we've attached these events
-            // because it causes the hover to be triggered when the element is tapped on a touch device
-            $('.hover').hover(function(){
-                $(this).addClass('flip');
-            },function(){
-                $(this).removeClass('flip');
-            });
-        });
-
-     $('.word h4:gt(0)').hide();
-     setInterval(function(){
- $('.word h4:first')
-         .fadeOut()
-         .next('h4')
-         .fadeIn()
-         .end()
-         .appendTo('.word');
-  },2000);
-
-     $(document).ready(function(){
-     $(".media-video").hide();
-     $(".playpausebtn").click(function(){
-      $(".media-video").fadeIn(1000);
-      $(".container").hide(100);
-     });
-     });
 
 
-    </script>
+
